@@ -1,7 +1,7 @@
 local Utility = {
-    UIS = Instance.new("UserInputService"),
+    UIS = game:GetService("UserInputService"),
     VIM = Instance.new("VirtualInputManager"),
-    RunService = Instance.new("RunService")
+    RunService = game:GetService("RunService")
 }
 
 function Utility:ListPlayers()
