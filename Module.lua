@@ -1,4 +1,4 @@
-local Utility = loadstring(game:HttpGet())()
+local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/TempedOut/test/main/Utitlity.lua"))()
 
 local PlayerEsp = {
     Threads = {},
