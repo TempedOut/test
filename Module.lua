@@ -14,7 +14,9 @@ local PlayerEsp = {
 
 function PlayerEsp:Init()
     for _, Player in Utility:ListPlayers() do
-        self:Add(Player)
+        if Player ~= game.Players.LocalPlayer then
+            self:Add(Player)
+        end
     end
 
     self.Connections = Utility.RunService.Heartbeat:Connect(function()
