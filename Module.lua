@@ -23,13 +23,13 @@ function PlayerEsp:Init()
         self.Check()
     end)
 
-    self.Connections.PlayerAdded = game.Players.PlayerAdded:Connect(function(Player)
-        self:Add(Player)
-    end)
+    --self.Connections.PlayerAdded = game.Players.PlayerAdded:Connect(function(Player)
+        --self:Add(Player)
+    --end)
 
-    self.Connections.PlayerRemoving = game.Players.PlayerRemoving:Connect(function(Player)
-        self:Remove(Player)
-    end)
+    --self.Connections.PlayerRemoving = game.Players.PlayerRemoving:Connect(function(Player)
+        --self:Remove(Player)
+    --end)
 end
 
 function PlayerEsp:Add(Player)
